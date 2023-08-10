@@ -1,0 +1,175 @@
+/* styles.css */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --transition-speed: 0.3s;
+}
+
+body {
+    margin-top: 20px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--transition-speed);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--primary-color);
+    transition: color var(--transition-speed);
+}
+.navbar .nav-link .fas {
+    margin-right: 5px;
+    transition: color var(--transition-speed);
+}
+.navbar .nav-link:hover .fas,
+.navbar .nav-link:focus .fas {
+    color: var(--primary-color);
+}
+.navbar .btn-outline-light {
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+.navbar .btn-outline-light:hover {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #FFFFFF;
+  }
+.form-control {
+    transition: box-shadow var(--transition-speed);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.list-group-item {
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.list-group-item:hover {
+    background-color: var(--light-color);
+}
+a:hover,
+a:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+a:hover,
+a:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+/* Add custom styles for the sidebar and main content area */
+.sidebar {
+    padding-top: 20px;
+}
+
+.sidebar .card {
+    margin-bottom: 20px;
+}
+
+.sidebar .card-header {
+    font-weight: bold;
+    background-color: var(--light-color);
+    border-bottom: none;
+}
+
+.sidebar h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+  }
+  /* products css */
+  .product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 100%;
+}
+.wishlist-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.wishlist-icon,
+.cart-icon {
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wishlist-icon:hover,
+.cart-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wishlist-icon {
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-icon {
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.4rem;
+}
+/* wishlist */
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.wishlist-item {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s;
+}
+
+.wishlist-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #f44336;
+}
